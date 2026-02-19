@@ -1,0 +1,60 @@
+# ============================================
+# .dockerignore - FRONTEND
+# ============================================
+# Archivos y carpetas que Docker debe IGNORAR
+# al construir la imagen
+# ============================================
+
+# Dependencias
+node_modules
+npm-debug.log
+bun.lockb.backup
+
+# Archivos de entorno
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+
+# Build outputs
+dist
+build
+.vite
+*.local
+
+# Git
+.git
+.gitignore
+
+# Editor
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# Testing
+coverage
+.nyc_output
+**/*.test.tsx
+**/*.spec.tsx
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Documentación
+README.md
+docs
+
+# CI/CD
+.github
+.gitlab-ci.yml
+
+# Otros
+*.md
+!README.md
